@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".AddIncomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/green">
+
+        <EditText
+            android:id="@+id/addIncomeDecEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Income Description"
+            android:inputType="text"
+            android:textAppearance="?android:textAppearanceLarge" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/green">
+
+        <EditText
+            android:id="@+id/addIncomeAmountEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="How much money?"
+            android:inputType="text"
+            android:textAppearance="?android:textAppearanceLarge" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/addIncomeDateTvId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="Date"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:gravity="center"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addIncomeAnaDateBtnId"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Another Date"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/black"
+            app:icon="@drawable/ic_calendar"
+            app:iconTint="@color/black"
+            app:rippleColor="@color/green" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addIncomeSaveBtnId"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/black"
+        app:cornerRadius="9dp"
+        app:iconPadding="3dp"
+        app:iconTint="@color/black"
+        app:rippleColor="@color/green"
+        app:strokeColor="@color/gray"
+        app:strokeWidth="2dp" />
+
+
+</LinearLayout>

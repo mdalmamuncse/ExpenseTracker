@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChartId"
+            android:layout_weight="3"
+            android:layout_width="215dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#eeeeee"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/incomeTvId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Income"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:id="@+id/expenseTvId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Expense"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/red"/>
+
+            <TextView
+                android:id="@+id/balanceTvId"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="Balance"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/blue"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="6"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addIncomeBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/add_income"
+                android:textColor="@color/black"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_marginLeft="4dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="2dp"
+                app:cornerRadius="9dp"
+                app:icon="@drawable/add_24dp"
+                app:iconPadding="7dp"
+                app:iconTint="@color/green"
+                app:rippleColor="@color/green"
+               />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/addExpenseBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/add_expense"
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_marginRight="4dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:strokeColor="@color/gray"
+                app:strokeWidth="2dp"
+                app:cornerRadius="9dp"
+                app:icon="@drawable/remove_24dp"
+                app:iconPadding="7dp"
+                app:iconTint="@color/red"
+                app:rippleColor="@color/red"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
